@@ -1,0 +1,10 @@
+<%= @var.upcase %>
+<h2 class="index-greeting">
+Hi, Welcome to Kpopular!
+</h2>
+
+<%= form_tag users_path do %>
+  <%= text_field_tag :first_name %>
+  <%= text_field_tag :last_name %>
+  <%= submit_tag "Submit" %>
+<% end %>
